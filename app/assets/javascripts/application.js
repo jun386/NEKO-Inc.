@@ -105,7 +105,7 @@ if (windowWidth > 768) {
 
 
     // フッター消去
-    const ContactFooter = location.pathname;
+    var ContactFooter = location.pathname;
     
     if(ContactFooter == "/contact") {
         $(".footer_wrapper").addClass("delete");
@@ -350,7 +350,7 @@ if (windowWidth > 768) {
     
     
     // フッター消去
-    const ContactFooter = location.pathname;
+    var ContactFooter = location.pathname;
     
     if(ContactFooter == "/contact") {
         $(".footer_wrapper").addClass("delete");
@@ -506,7 +506,7 @@ if (windowWidth > 768) {
     
     
     // フッター消去
-    const ContactFooter = location.pathname;
+    var ContactFooter = location.pathname;
     
     if(ContactFooter == "/contact") {
         $(".footer_wrapper").addClass("delete");
