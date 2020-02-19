@@ -28,7 +28,7 @@ if (windowWidth > 768) {
         topBottom,
         meowBottom;
     
-    const gronav_change_color = location.pathname;
+    var gronav_change_color = location.pathname;
     if(gronav_change_color == "/") {
         $(window).scroll(function(){
             topBottom = $('.top_container').height() + 72;
