@@ -72,6 +72,7 @@
         top: 44vh;
         height: 44vh;
         z-index: 9;
+        left: 0;
     }
     
     .top_container .top_side {
@@ -114,7 +115,7 @@
     
     .top_container .top_side .top_side_latest .top_side_latest_wrapper .top_side_product_data {
         bottom: 30px;
-        right: -188px;
+        right: -320px;
         padding: 0;
     }
     

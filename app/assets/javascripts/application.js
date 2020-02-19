@@ -293,7 +293,7 @@ if (windowWidth > 768) {
     
     // gronav 色変更
     
-    const gronav_change_color = location.pathname;
+    var gronav_change_color = location.pathname;
     var _headerlinks = $('.gronav_link'),
         topBottom,
         meowBottom;
@@ -449,7 +449,7 @@ if (windowWidth > 768) {
     
     // gronav 色変更
     
-    const gronav_change_color = location.pathname;
+    var gronav_change_color = location.pathname;
     var _headerlinks = $('.gronav_link'),
         topBottom,
         meowBottom;
