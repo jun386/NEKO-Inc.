@@ -1,0 +1,65 @@
+<div class="top_container">
+    <div class="top_img"></div>
+    <div class="top_side">
+        <div class="top_side_wrapper">
+            <div class="top_side_letter">
+                <h2>Cat First.</h2>
+                <h1>NEKO</h1>
+            </div>
+            <div class="top_side_latest">
+                <div class="top_side_latest_wrapper">
+                  <img src="latest1.svg" width="32" height="32" class="latest">
+                  <a href="#">
+                    <img src="/RINN_top_side_img.jpeg">
+                    <div class="top_side_product_data">
+                        <div class="data">
+                            <span class="date">January 11th, 2020</span>
+                            <object><a href="#">Design,</a></object>
+                            <object><a href="#">News,</a></object>
+                            <object><a href="#">Products</a></object>
+                        </div>
+                        <div class="name">
+                            <p>Cat Food Bowl</p>
+                        </div>
+                        <object>
+                            <a href="#">
+                                <span>READ</span>
+                            </a>
+                        </object>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .top_side_latest_wrapper {
+        position: relative;
+        z-index: 9;
+    }
+    
+    .top_side_latest > div > img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        z-index: 9;
+        animation: rotate-anime 3s linear infinite;
+    }
+
+  
+      @keyframes rotate-anime {
+        0%  {transform: rotate3d(1,1,1,1);}
+        100%  {transform: rotate3d(1,1,1,360deg);}
+        /*0%  {transform: rotate(0);}*/
+        /*100%  {transform: rotate(360deg);}        */
+      }
+    
+    
+    
+</style>

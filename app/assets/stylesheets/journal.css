@@ -1,0 +1,32 @@
+.detail_journal_container h1 {
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: #000;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.detail_journal_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1275px;
+    margin-right: 38px;
+    margin-left: 38px;
+    margin-bottom: 76px;
+}
+
+.journal_main_article {
+    margin: 76px 38px 114px;
+}
+
+.detail_journal_img_width {
+    width: 348px;
+    height: 233px;
+}
+
+.detail_journal_img_height {
+    width: 348px;
+    height: 464px;
+}

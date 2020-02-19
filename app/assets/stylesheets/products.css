@@ -1,0 +1,96 @@
+.detail_products_container h1 {
+    font-size: 85px;
+    letter-spacing: 5px;
+    color: #000;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 160px;
+}
+
+.detail_products_NEKO {
+    margin-bottom: 76px;
+    display: flex;
+}
+
+.detail_products_NEKO img {
+    width: 50%;
+    height: 802px;
+}
+
+.detail_products_NEKO a {
+    width: 50%;
+}
+
+.detail_products_NEKO .detail_products_wrapper {
+    width: 304px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.detail_products_NEKO .detail_products_wrapper img {
+    width: 304px;
+    height: 304px;
+    margin-bottom: 28px;
+}
+
+.detail_products_NEKO .detail_products_wrapper h2 {
+    margin-bottom: 15px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.detail_products_NEKO .detail_products_wrapper p {
+    color: #000;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+    line-height: 2em;
+}
+
+.detail_products_NEKO .detail_products_wrapper object a {
+    color: #000;
+    display: block;
+    width: 220px;
+    height: 49px;
+    background-color: #fff;
+    padding: 13px 59px;
+    margin: 50px auto 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    margin-left: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.detail_products_NEKO a:hover {
+    text-decoration: none;
+}
+
+.detail_products_NEKO a img {
+    transition-duration: 0.3s;
+}
+
+.detail_products_NEKO a:hover img {
+    transform: translate(0, -15px);
+}
+
+.detail_products_container .detail_products_NEKO .detail_products_wrapper a .bg {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(110%) skewX(30deg);
+}
+
+.detail_products_NEKO a:hover .detail_products_wrapper object a {
+    color: #fff;
+}
+
+.detail_products_NEKO .detail_products_wrapper object a .t {
+    position: relative;
+    z-index: 2;
+}

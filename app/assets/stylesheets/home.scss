@@ -1,0 +1,625 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// topページ
+
+
+.top_img {
+    width: 100%;
+    height: 800px;
+    background-image: url("/RINN_top_img.jpg");
+    background-repeat: no-repeat;
+    // background-position: 0vw;
+    background-size: cover;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    position: relative;
+    z-index: 7;
+    left: -5.5vw;
+}
+
+.top_side {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    width: 30%;
+    height: 800px;
+    background: #fff;
+    z-index: 8;
+    padding-right: 5.5vw;
+}
+
+.top_side_wrapper {
+    position: relative;
+}
+
+.top_side_letter h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.top_side_letter h1 {
+    font-weight: 400;
+    letter-spacing: 10px;
+    font-size: 65px;
+}
+
+.top_side_letter {
+    width: 200px;
+    margin: 70px auto 100px;
+}
+
+.top_side_latest {
+    width: 30vw;
+    height: 260px;
+    position: absolute;
+    left: -70px;
+    margin-top: 120px;
+}
+
+.top_side_latest_wrapper {
+    position: relative;
+}
+
+.top_side_latest_wrapper a img {
+    transition-duration: 0.3s;
+}
+
+.top_side_latest_wrapper a:hover img {
+    transform: translate(0, -15px);
+}
+
+.top_side_latest img {
+    width: 30vw;
+    height: 253px;
+}
+
+.top_side_product_data {
+    width: 228px;
+    height: 123px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 22.5px 21.5px;
+}
+
+.top_side_product_data .data {
+    margin-bottom: 10px;
+}
+
+.date {
+    color: gray;
+    font-size: 12px;
+    margin-right: 7px;
+}
+
+.top_side_product_data .data object a {
+    color: #555;
+    font-size: 12px;
+    border-bottom: 1px solid #555;
+}
+
+.name p {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.top_container .top_side .top_side_latest_wrapper .top_side_product_data > object a {
+    display: none;
+    color: #fff;
+    width: 165px;
+    height: 49px;
+    background-color: #000;
+    padding: 13px 62px;
+    margin: 0px auto 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    margin-left: 0;
+    position: relative;
+}
+
+
+
+// meow
+
+.meow_container {
+    background-color: #222;
+    padding-top: 130px;
+    padding-bottom: 190px;
+    position: relative;
+    z-index: 8;
+}
+
+.meow_container h1 {
+    text-align: center;
+    font-size: 9vw;
+    letter-spacing: 130px;
+    margin-left: 100px;
+    color: #fff;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    position: relative;
+    z-index: 1;
+}
+
+.meow_main {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+}
+
+.meow_main img {
+    width: 37vw;
+    height: 50vw;
+}
+
+.meow_main_title {
+    width: 28vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.meow_main_title h2 {
+    font-size: 2vw;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 180px;
+    margin-bottom: 21px;
+    line-height: 40px
+}
+
+.meow_main_title p {
+    font-size: 0.9rem;
+    color: gray;
+    line-height: 28px
+}
+
+.meow_main_button {
+    width: 310px;
+}
+
+.meow_main_button_btn {
+    overflow: hidden;
+    display: block;
+    max-width: 230px;
+    width: 20vw;
+    height: 49px;
+    background-color: #fff;
+    color: #000;
+    padding: 14px 5.7vw;
+    margin: 270px auto 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 3px;
+    position: relative;
+}
+
+.meow_main_button_btn .bg {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(110%) skewX(30deg);
+}
+
+.meow_main_button_btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.meow_main_button_btn .t {
+    position: relative;
+    z-index: 2;
+}
+
+.e .bg{
+    transition: transform .4s;
+    transition-timing-function: cubic-bezier(0.4,0,0.2,1);
+    transform: translateX(0%) skewX(0deg) !important;
+}
+
+.o .bg{
+    transition: transform .3s;
+    transition-timing-function: ease-out;
+    transform: translateX(-110%) skewX(-30deg) !important;
+}
+
+
+
+// product
+
+.products_container {
+    padding: 0 76px 120px;
+    margin-bottom: 200px;
+}
+
+.products_title {
+    position: relative;
+    z-index: 1;
+}
+
+.products_title h1 {
+    font-size: 85px;
+    color: #000;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.products_title .products_title_btn {
+    display: block;
+    width: 220px;
+    height: 49px;
+    background-color: #000;
+    color: #fff;
+    padding: 14px 90px;
+    margin: 50px auto 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid lightgray;
+}
+
+.products_title .products_title_btn:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.products_title_btn .t {
+    position: relative;
+    z-index: 2;
+}
+
+.products_title_btn .bg {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(110%) skewX(30deg);
+}
+
+.products_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products_main img {
+    width: 33.3vw;
+    height: 33.3vw;
+}
+
+.products_main a {
+    color: #000;
+}
+
+.products_main a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.products_main_tree {
+    position: relative;
+    width: 33.3vw;
+    height: 33.3vw;
+}
+
+.products_main_cup {
+    margin-top: 300px;
+    position: relative;
+    width: 33.3vw;
+    height: 33.3vw;
+}
+
+.products_main_food {
+    margin-left: 120px;
+    margin-top: -30px;
+    position: relative;
+    width: 33.3vw;
+    height: 33.3vw;
+}
+
+.products_main_tree_data {
+    width: 305px;
+    height: 160px;
+    padding: 24px 32px;
+    background-color: #fff;
+    position: absolute;
+    top: 410px;
+}
+
+.products_main_tree_data p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+.products_main_tree_data h2 {
+    letter-spacing: 5px;
+    margin-bottom: 13px;
+}
+
+.products_main_cup_data {
+    width: 305px;
+    height: 160px;
+    padding: 24px 32px;
+    background-color: #fff;
+    position: absolute;
+    top: 410px;
+    right: 0;
+}
+
+.products_main_cup_data p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+.products_main_cup_data h2 {
+    letter-spacing: 5px;
+    margin-bottom: 13px;
+}
+
+.products_main_food_data {
+    width: 305px;
+    height: 160px;
+    padding: 24px 32px;
+    background-color: #fff;
+    position: absolute;
+    top: 410px;
+}
+
+.products_main_food_data p {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    color: #111;
+}
+
+.products_main_food_data h2 {
+    letter-spacing: 5px;
+    margin-bottom: 13px;
+}
+
+.products_main a img {
+    transition-duration: 0.3s;
+}
+
+.products_main a:hover img {
+    transform: translate(0, -15px);
+}
+
+.products_main_btn i {
+    display: none;
+}
+
+
+
+// journal
+
+.journal_container {
+    padding: 76px;
+}
+
+.journal_title {
+    display: flex;
+}
+
+.journal_title h1 {
+    font-size: 90px;
+    letter-spacing: 5px;
+    margin-right: 76px;
+}
+
+.hr {
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+    margin-top: 61px;
+}
+
+.journal_btn {
+    text-align: right;
+    margin: 30px;
+}
+
+.journal_btn i {
+    font-size: 35px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    -ms-text-align-last: right;
+}
+
+.journal_btn i:first-child {
+    margin-right: 5px;
+}
+
+.journal_main {
+    display: flex;
+    overflow-x: auto;
+}
+
+.journal_main .journal_main_article {
+    align-self: flex-end;
+}
+
+.journal_main .journal_main_article:not(:last-child) img {
+    width: 330px;
+    height: 220px;
+}
+
+.journal_main .journal_main_article:last-child img {
+    width: 330px;
+    height: 440px;
+}
+
+.journal_main_article a:hover {
+    text-decoration: none;
+}
+
+.journal_main .journal_main_article:not(:last-child) {
+    margin-right: 80px;
+}
+
+.journal_main_article a img {
+    transition-duration: 0.3s;
+}
+
+.journal_main_article a:hover img {
+    transform: translate(0, -15px);
+}
+
+.name_japanese p {
+    font-size: 19px;
+}
+
+.journal_main::-webkit-scrollbar {
+  display: none;
+}
+
+.journal_main_article .journal_main_article_title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.journal_main_article_title .data{
+    margin-bottom: 12px;
+}
+
+.journal_container .journal_more_btn {
+    display: none;
+}
+
+.gray {
+    color: gray;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+
+// contact
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact a {
+    display: block;
+    border-top: 1px solid #ddd;
+    width: 50%;
+    height: 342px;
+}
+
+.contact a:first-child {
+    border-right: 1px solid #ddd;
+}
+
+.contact a:hover {
+    text-decoration: none;
+} 
+
+.contact_company_container {
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_contact_container {
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h1 {
+    font-size: 3.5vw;
+    color: #000;
+    letter-spacing: 5px;
+}
+
+.contact p {
+    font-size: 1vw;
+    color: gray;
+}
+
+.contact a:first-child:hover {
+    background-image: url("/RINN_top_company.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.contact a:first-child:hover p {
+    color: #fff;
+}
+
+.contact a:first-child:hover h1 {
+    color: #fff;
+}
+
+.contact a:last-child:hover {
+    background-image: url("/RINN_top_company.jpg");
+    background-position : right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.contact a:last-child:hover p {
+    color: #fff;
+}
+
+.contact a:last-child:hover h1 {
+    color: #fff;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 3px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
