@@ -1,11 +1,27 @@
-<div id="loader_bg">
-    <% if request.referer.include?("https://2a345f22037c4a189c5983bbe1dbaba7.vfs.cloud9.ap-northeast-1.amazonaws.com") %>
-      <% if request.referer != request.url %>
-        <%= render 'layouts/subloader'%>
+<% if Rails.env.development? %>
+  <div id="loader_bg">
+      <% if request.referer.include?("https://2a345f22037c4a189c5983bbe1dbaba7.vfs.cloud9.ap-northeast-1.amazonaws.com") %>
+        <% if request.referer != request.url %>
+          <%= render 'layouts/subloader'%>
+        <% else %>
+          <%= render 'layouts/loader' %>
+        <% end %>
       <% else %>
-        <%= render 'layouts/loader' %>
+          <%= render 'layouts/loader' %>      
       <% end %>
-    <% else %>
-        <%= render 'layouts/loader' %>      
-    <% end %>
-</div>
+  </div>
+<% end %>
+
+<% if Rails.env.production? %>
+  <div id="loader_bg">
+      <% if request.referer.include?("https://mysterious-lake-05062.herokuapp.com/") %>
+        <% if request.referer != request.url %>
+          <%= render 'layouts/subloader'%>
+        <% else %>
+          <%= render 'layouts/loader' %>
+        <% end %>
+      <% else %>
+          <%= render 'layouts/loader' %>      
+      <% end %>
+  </div>
+<% end %>
