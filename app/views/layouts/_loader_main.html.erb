@@ -7,13 +7,16 @@
           <%= render 'layouts/loader' %>
         <% end %>
       <% else %>
-          <%= render 'layouts/loader' %>      
+          <%= render 'layouts/loader' %>
       <% end %>
   </div>
 <% end %>
 
 <% if Rails.env.production? %>
   <div id="loader_bg">
+    <% request.referer.nil? %>
+      <%= render 'layouts/loader' %>
+    <% else %>
       <% if request.referer.include?("https://mysterious-lake-05062.herokuapp.com/") %>
         <% if request.referer != request.url %>
           <%= render 'layouts/subloader'%>
@@ -21,7 +24,8 @@
           <%= render 'layouts/loader' %>
         <% end %>
       <% else %>
-          <%= render 'layouts/loader' %>      
+          <%= render 'layouts/loader' %>
       <% end %>
+    <% end %>
   </div>
 <% end %>
