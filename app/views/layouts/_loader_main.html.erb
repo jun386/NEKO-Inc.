@@ -14,7 +14,7 @@
 
 <% if Rails.env.production? %>
   <div id="loader_bg">
-    <% request.referer.nil? %>
+    <% if request.referer.nil? %>
       <%= render 'layouts/loader' %>
     <% else %>
       <% if request.referer.include?("https://mysterious-lake-05062.herokuapp.com/") %>
